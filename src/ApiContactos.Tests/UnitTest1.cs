@@ -1,4 +1,4 @@
-﻿using System.Net;
+using System.Net;
 using System.Text.Json;
 using Microsoft.AspNetCore.Mvc.Testing;
 using Xunit;
@@ -40,6 +40,4 @@ public class ProgramTest : IClassFixture<WebApplicationFactory<Program>>
     {
         public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
     }
-
-    
 }
